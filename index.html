@@ -4,10 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Time Keeper - Timing Chart Animation Tool</title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="dist/style.css" rel="stylesheet">
     </head>
     <body>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="dist/bundle.min.js"></script>
+        <h1>Time Keeper</h1>
+        <p>This is a first preview.</p>
+        <div id="timeline">
+            <div id="timeline__framelist">
+                <div id="timeline__framelist__frame-001" class="timeline__framelist__framenumber"><input type="text" name="startframe" value="1"></div>
+                <div id="timeline__framelist__frame-002" class="timeline__framelist__framenumber">2</div>
+                <div id="timeline__framelist__frame-003" class="timeline__framelist__framenumber">3</div>
+                <div id="timeline__framelist__frame-004" class="timeline__framelist__framenumber">4</div>
+                <div id="timeline__framelist__frame-005" class="timeline__framelist__framenumber">5</div>
+                <div id="timeline__framelist__frame-006" class="timeline__framelist__framenumber">6</div>
+                <div id="timeline__framelist__frame-007" class="timeline__framelist__framenumber">7</div>
+                <div id="timeline__framelist__frame-008" class="timeline__framelist__framenumber">8</div>
+                <div id="timeline__framelist__frame-009" class="timeline__framelist__framenumber">9</div>
+                <div id="timeline__framelist__frame-010" class="timeline__framelist__framenumber">10</div>
+                <div id="timeline__framelist__frame-011" class="timeline__framelist__framenumber">11</div>
+                <div id="timeline__framelist__frame-012" class="timeline__framelist__framenumber">12</div>
+                <div id="timeline__framelist__frame-013" class="timeline__framelist__framenumber">13</div>
+            </div>
+            <div id="frame-001" class="frame"></div>
+            <div id="frame-002" class="frame"></div>
+            <div id="frame-003" class="frame"></div>
+            <div id="frame-004" class="frame"></div>
+            <div id="frame-005" class="frame"></div>
+            <div id="frame-006" class="frame"></div>
+            <div id="frame-007" class="frame"></div>
+            <div id="frame-008" class="frame"></div>
+            <div id="frame-009" class="frame"></div>
+            <div id="frame-010" class="frame"></div>
+            <div id="frame-011" class="frame"></div>
+            <div id="frame-012" class="frame"></div>
+            <div id="frame-013" class="frame"></div>
+            <div class="layer" id="layer-001">
+                <div class="motion ease-out segments-005 twos" id="motion-001">
+                    <div id="motion__segment" id="motion-001__segment-001"></div>
+                    <div id="motion__segment" id="motion-001__segment-002"></div> 
+                    <div id="motion__segment" id="motion-001__segment-003"></div>
+                    <div id="motion__segment" id="motion-001__segment-004"></div> 
+                    <div id="motion__segment" id="motion-001__segment-005"></div>
+                </div>
+            </div>
+        </div>     
     </body>
 </html>
-

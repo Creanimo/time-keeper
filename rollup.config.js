@@ -1,4 +1,5 @@
 import { minify } from 'rollup-plugin-esbuild-minify'
+import sass from 'rollup-plugin-sass';
 
 export default {
   input: 'src/app.js',
@@ -7,5 +8,9 @@ export default {
     format: 'iife',
     name: 'TimeKeeper'
   },
-  plugins: [ minify() ]
+  plugins: [ minify(),
+        sass({
+            include:  ['./src/css/style.scss'],
+            output: 'dist/style.css'
+        }) ]
 };
