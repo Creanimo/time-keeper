@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",  
   "scripts": {
-    "test": "mocha ./test"
+    "test": "mocha ./test",
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/Creanimo/time-keeper/issues"
   },
-  "homepage": "https://github.com/Creanimo/time-keeper#readme"
+  "homepage": "https://github.com/Creanimo/time-keeper#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rollup": "^4.24.0",
+    "rollup-plugin-esbuild-minify": "^1.1.2"
+  }
 }
