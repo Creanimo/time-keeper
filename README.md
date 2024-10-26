@@ -3,5 +3,5 @@
 # Build
 
 ```bash
-node_modules/.bin/rollup rollup.config.js -c
+node_modules/.bin/rollup -c rollup.config.js
 ```
