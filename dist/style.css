@@ -20,3 +20,97 @@ svg {
   left: 7px;
   font-size: 50%;
 }
+
+#timeline {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+#timeline__framelist, #timeline .layer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 30px;
+}
+#timeline .layer {
+  width: 90px;
+}
+#timeline .frame,
+#timeline .motion {
+  grid-column: 1/2;
+}
+#timeline .motion {
+  width: max-content;
+  justify-self: center;
+  background-color: aliceblue;
+}
+
+.timeline__framelist__framenumber input {
+  max-width: 40px;
+}
+
+#layer-001__motion-001 {
+  grid-row: 1/9;
+}
+
+#layer-001__motion-002 {
+  grid-row: 9/15;
+}
+
+#frame-001 {
+  grid-row: 1/2;
+}
+
+#frame-002 {
+  grid-row: 2/3;
+}
+
+#frame-003 {
+  grid-row: 3/4;
+}
+
+#frame-004 {
+  grid-row: 4/5;
+}
+
+#frame-005 {
+  grid-row: 5/6;
+}
+
+#frame-006 {
+  grid-row: 6/7;
+}
+
+#frame-007 {
+  grid-row: 7/8;
+}
+
+#frame-008 {
+  grid-row: 8/9;
+}
+
+#frame-009 {
+  grid-row: 9/10;
+}
+
+#frame-010 {
+  grid-row: 10/11;
+}
+
+#frame-011 {
+  grid-row: 11/12;
+}
+
+#frame-012 {
+  grid-row: 12/3;
+}
+
+#frame-013 {
+  grid-row: 13/14;
+}
+
+#frame-014 {
+  grid-row: 14/15;
+}
+
+#frame-015 {
+  grid-row: 15/16;
+}
