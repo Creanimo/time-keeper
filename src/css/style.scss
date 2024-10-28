@@ -10,14 +10,10 @@ svg {
   display: block;
 }
 
-#motion__segment {
-  position: relative;
-}
-
 .motion__frame-number {
   position: absolute;
-  top: -4px;
-  left: 7px;
+  top: -6px;
+  left: -9px;
   font-size: 50%;
 }
 
@@ -42,14 +38,38 @@ svg {
   }
 
   .motion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: max-content;
     justify-self: center;
     background-color: aliceblue;
+
+    &__segment {
+      border-top: 2px solid black;
+      width: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        border-left: 2px solid black;
+        left: calc(50% - 1px);
+      }
+    }
   }
 }
 
 .timeline__framelist__framenumber input {
   max-width: 40px;
+}
+
+// Style of keyframe motion segments
+#timeline .motion.key .motion__segment:first-child {
+  width: 40px;
 }
 
 #layer-001__motion-001 {
@@ -119,4 +139,20 @@ svg {
 
 #frame-015 {
   grid-row: 15/16;
+}
+
+#motion-001__segment-004 {
+  height: 50%;
+}
+
+#motion-001__segment-003 {
+  height: 25%;
+}
+
+#motion-001__segment-002 {
+  height: 12.5%;
+}
+
+#motion-001__segment-001 {
+  height: 12.5%;
 }
