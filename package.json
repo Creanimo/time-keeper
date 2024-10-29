@@ -5,6 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "build": "rollup -c rollup.config.js",
     "test": "mocha ./test",
     "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
   },
@@ -22,9 +23,17 @@
   },
   "homepage": "https://github.com/Creanimo/time-keeper#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "http-server": "^14.1.1",
     "rollup": "^4.24.0",
+    "rollup-plugin-dotenv": "^0.5.1",
     "rollup-plugin-esbuild-minify": "^1.1.2",
+    "rollup-plugin-polyfill-node": "^0.13.0",
     "rollup-plugin-sass": "^1.13.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mustache": "^4.2.0"
   }
 }
